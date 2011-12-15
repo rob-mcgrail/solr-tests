@@ -4,8 +4,8 @@ require_once(dirname(__FILE__) . '/../lib/all.php');
 class TopResultsSubstantiallyUnchanged extends SimilarityTestCase {
 		var $test_items = array(
 			'ncea' => array('TKI34728'),
-			'exemplars' => array('TKI80874', 'TKI80013', 'TKI23004', 'TKI23006'),
-			'english' => array('TKI80868', 'TKI23033', 'TKI81146'),
+			'exemplars' => array('TKI80874', 'TKI80013', 'TKI81146'),
+			'english' => array('TKI80868', 'TKI46691', 'TKI59735', 'TKI80013', 'TKI23033'),
 			'digistore' => array('TKI59990'),
 			'science' => array('TKI80039', 'TKI46710', 'TKI50163'),
 			'writing exemplars' => array('TKI23033', 'TKI80013'),
