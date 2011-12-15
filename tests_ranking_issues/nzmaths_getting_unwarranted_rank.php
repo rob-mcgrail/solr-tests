@@ -34,22 +34,23 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 	  # return good proportion of MZMaths items. Ensures fix for
 	  # previous function doesn't work too well.
 		$test_items = array(
-			'nzmaths',
-			'maths',
-			'numeracy',
-			'number',
+			'ALiM school stories nzmaths',
+			'Algebra information',
+			'maths level 3 problems',
+			'maths level 2 problems',
 			'fractions',
+			'Attribute Blocks: Exploring Shape',
 		);
 		foreach ($test_items as $value) {
 			$solr = new Solr();
-			$pids = $solr->search($value, 10);
+			$pids = $solr->search($value, 20);
 			$i = 0;
 			foreach ($pids as $id) {
 				if (preg_match('/nzmaths/', $id)) {
 					$i++;
 				}
 			}
-			$this->assertTrue($i > 5, "Search for ".Helpers::search_link($value)." has insufficient nzmaths items");
+			$this->assertTrue($i > 10, "Search for ".Helpers::search_link($value)." has insufficient nzmaths items");
 		}
 	}
 }
