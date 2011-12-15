@@ -50,7 +50,7 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 					$i++;
 				}
 			}
-			$this->assertTrue($i > 10, "Search for ".Helpers::search_link($value)." has insufficient nzmaths items");
+			$this->assertTrue($i > 1, "Search for ".Helpers::search_link($value)." has insufficient nzmaths items");
 		}
 	}
 }
