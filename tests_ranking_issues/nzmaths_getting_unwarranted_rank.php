@@ -15,7 +15,6 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 			'science',
 			'reading',
 			'students',
-			'scuba',
 		);
 		foreach ($test_items as $value) {
 			$solr = new Solr();
@@ -40,6 +39,7 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 			'maths level 2 problems',
 			'fractions',
 			'Attribute Blocks: Exploring Shape',
+			'scuba'
 		);
 		foreach ($test_items as $value) {
 			$solr = new Solr();
