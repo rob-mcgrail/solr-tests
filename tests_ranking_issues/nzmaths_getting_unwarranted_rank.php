@@ -28,7 +28,7 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 			$this->assertTrue($i < 1, "Search for ".Helpers::search_link($value)." has too many free-text NZ Maths items");
 		}
 	}
-	function test_nzmaths_available_where_appropriate() {
+	function test_nzmaths_where_appropriate() {
 	  # Checks that first 10 results for nzmaths related keywords
 	  # return good proportion of MZMaths items. Ensures fix for
 	  # previous function doesn't work too well.
@@ -50,7 +50,7 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 					$i++;
 				}
 			}
-			$this->assertTrue($i > 1, "Search for ".Helpers::search_link($value)." has insufficient nzmaths items");
+			$this->assertTrue($i > 0, "Search for ".Helpers::search_link($value)." has insufficient nzmaths items");
 		}
 	}
 }
