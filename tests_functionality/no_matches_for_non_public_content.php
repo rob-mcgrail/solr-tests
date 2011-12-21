@@ -34,7 +34,6 @@ class NoMatchesForNonPublicContent extends UnitTestCase {
     # Test paths for common staging urls
 		$test_items = array(
 			'staging.internal',
-			'cwa.co.nz',
 			'dev.internal',
 			'preprod',
 		);
