@@ -35,15 +35,12 @@ class NzmathsGettingUnwarrantedRank extends UnitTestCase {
 		$test_items = array(
 			'ALiM school stories nzmaths',
 			'Algebra information',
-			'maths level 3 problems',
-			'maths level 2 problems',
-			'fractions',
 			'Attribute Blocks: Exploring Shape',
 			'scuba'
 		);
 		foreach ($test_items as $value) {
 			$solr = new Solr();
-			$pids = $solr->search($value, 20);
+			$pids = $solr->search($value, 50);
 			$i = 0;
 			foreach ($pids as $id) {
 				if (preg_match('/nzmaths/', $id)) {
